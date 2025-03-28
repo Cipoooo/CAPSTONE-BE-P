@@ -1,8 +1,7 @@
 package com.example.pre_capstone_fullstack.service;
 
 import com.example.pre_capstone_fullstack.entity.videogioco;
-import com.example.pre_capstone_fullstack.repository.videogiocoRepository;
-import lombok.RequiredArgsConstructor;
+import com.example.pre_capstone_fullstack.repository.VideogiocoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -25,7 +24,7 @@ public class videogiocoService {
     }
 
     @Autowired
-    videogiocoRepository repository;
+    VideogiocoRepository repository;
     private final RestTemplate restTemplate = new RestTemplate();
 
     public void salvaVideogiochi(List<videogioco> videogiochi) {
